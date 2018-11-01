@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fair Share PA</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integriyt="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+    <div class="navLogo">
+        <img src="#">
+    </div>
+
+    <div class="headerNavigation">
+        <i onclick="myFunction()" class="fas fa-bars fa-4x dropBtn"></i>
+        <div id="myDropdown" class="dropdown dropdownContent">
+            <ul class="navigation">
+                <li class="nav-item"><a href="#">ABOUT FAIR SHARE PA</a></li>
+                <li class="nav-item"><a href="#">GET INVOLVED</a></li>
+                <li class="nav-item"><a href="#">MEDIA COVERAGE</a></li>
+                <li class="nav-item"><a href="#">FREQUENT QUESTIONS</a></li>
+                <li class="nav-item"><a href="#">DISTRICTS WE WORK WITH</a></li>
+                <li class="nav-item"><a href="#">PRESS INQUIRES</a></li>
+                <li class="nav-item"><a href="#">CONTACT</a></li>
+            </ul>
+            <ul class="socialNav">
+                <li class="nav-item"><i class="fab fa-facebook-f fa-3x"></i> VISIT OUR FACEBOOK</li>
+                <li class="nav-item"><i class="fab fa-twitter fa-3x"></i> VISIT OUR TWITTER</li>
+                <li class="nav-item"><i class="fas fa-envelope fa-3x"></i> SEND US AN EMAIL</li>
+            </ul>
+            <ul class="socialNavMobile">
+                <li class="nav-item"><i class="fab fa-facebook-f fa-3x"></i></li>
+                <li class="nav-item"><i class="fab fa-twitter fa-3x"></i></li>
+                <li class="nav-item"><i class="fas fa-envelope fa-3x"></i></li>
+            </ul>
+        </div>
+    </div>
+
+    <script language="javascript">
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+         // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropBtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdownContent");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+    <div id="heroHeading">
+        <h1>Schools Deserve <br> Their Fair Share</h1>
+    </div>
+</header>
+
+<div class="whatIsFairShare">
+    <div class="whatIsLeft">
+        <h2>What's Fair <br> Share PA?</h2>
+    </div>
+    <div class="whatIsLeftMobile">
+        <h2>What's Fair Share PA?</h2>
+    </div>
+    <div class="whatIsRight">
+        <p>Let's just drop a little Evergreen right here. Here's something that's fun.
+            A fan brush is a fantastic piece of equipment. Use it. Make friends with it.
+
+            Let's give him a friend too. Everybody needs a friend. You can do anything
+            your heart can imagine. All you need is a dream in your heart, and an
+            almighty knife. I guess that would be considered a UFO. A big cotton ball
+            in the sky. Every time you practice, you learn more.
+        </p>
+    </div>
+</div>
+
+<div class="support">
+    <div class="supportTitle">
+        <h2>Support The Movement</h2>
+    </div>
+    <div class="supportForm">
+        <div class="supportLeft">
+            <div class="formInput">
+                <label for="supportEmail"></label>
+                <input type="email" class="supportEmail" id="supportEmail" placeholder="Email" required>
+            </div>
+        </div>
+        <div class="supportRight">
+            <div id="formSubmitButton">
+                <button type="submit" class="btn">Send</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="leadingCharge">
+    <div class="leadingChargeTitle">
+        <h2>Who's Leading The Charge</h2>
+    </div>
+    <div class="leadingChargeLeft">
+        <div class="attyLogo">
+            <img src="sIGNATURE.png" width="70%">
+        </div>
+        <div class="attyDesc">
+            <p>Just use the old one inch brush. There are no limits in this world. Let's get crazy.
+                Making all those little fluffies that live in the clouds. Trees grow in all kinds of ways.
+                They're not all perfectly straight. Not every limb is perfect. You create the dream - then you
+                bring it into your world</p>
+        </div>
+    </div>
+    <div class="leadingChargeRight">
+        <div class="attyLogo">
+            <img src="logo.png" width="70%">
+        </div>
+        <div class="attyDesc">
+            <p>Just use the old one inch brush. There are no limits in this world. Let's get crazy.
+                Making all those little fluffies that live in the clouds. Trees grow in all kinds of ways.
+                They're not all perfectly straight. Not every limb is perfect. You create the dream - then you
+                bring it into your world</p>
+        </div>
+    </div>
+</div>
+
+<div id="stats" class="keyStat">
+    <script language="JavaScript">
+        function banner() { } b = new banner() ; n = 0
+        b[n++]= "<div class='actualStats'>" +
+            "<h2>School Districts In PA Receive</h2>" +
+            "<h1>85%</h1>" +
+            "<h2>Of The Budget From Local Property Taxes</h2></div>"
+
+        b[n++]= "<p>In a city as vibrant and socially-minded as Philadelphia, the only question I had about joining " +
+            "YNPN was why I hadn't found it sooner. The nonprofit leaders in our community are raising up some of " +
+            "the most innovative and effective businesses the city has ever seen, and it's amazing to be an active " +
+            "part of it through YNPN Philly.</p><h3>- kristin wittman</h3>"
+
+        b[n++]= "<p>Philly depends on the work of nonprofits to make our city better, and the professionals who do " +
+            "the work deserve more. I became part of the YNPN Philly Start Up Chapter because YNPN Philly will " +
+            "provide not only networking, but a space where nonprofit professionals can take on leadership roles and" +
+            " projects. YNPN Philly will act as a resource to build up skills, become more effective, and take the " +
+            "next step in a career.  I joined YNPN Philly because I saw a future where nonprofit professionals can be" +
+            " a part of a community.</p><h3>- chloe finigan</h3>"
+
+        i=Math.floor(Math.random() * n) ;
+        document.write( b[i] )
+    </script>
+</div>
+
+<div class="howDistrict">
+    <div class="whatIsLeft">
+        <h2>How Does <br> A District <br> Participate?</h2>
+    </div>
+    <div class="whatIsLeftMobile">
+        <h2>How Does A District Participate?</h2>
+    </div>
+    <div class="whatIsRight">
+        <p>Let's just drop a little Evergreen right here. Here's something that's fun.
+            A fan brush is a fantastic piece of equipment. Use it. Make friends with it.
+
+            Let's give him a friend too. Everybody needs a friend. You can do anything
+            your heart can imagine. All you need is a dream in your heart, and an
+            almighty knife. I guess that would be considered a UFO. A big cotton ball
+            in the sky. Every time you practice, you learn more.
+        </p>
+    </div>
+</div>
+
+<div class="lowerContact">
+    <div class="supportTitle">
+        <h2>Have Any Questions?</h2>
+    </div>
+    <div class="contactButton">
+        <button type="submit" class="btn">Contact The Attorneys</button>
+    </div>
+</div>
+
+<footer>
+    <div class="footerLeft">
+        <ul class="footerLinks">
+            <li class="footerNav">About Fair Share PA</li>
+            <li class="footerNav">Get Involved</li>
+            <li class="footerNav">Media Coverage</li>
+            <li class="footerNav">Frequent Questions</li>
+            <li class="footerNav">Districts We Work With</li>
+            <li class="footerNav">Press Inquires</li>
+            <li class="footerNav">Contact</li>
+        </ul>
+        <ul class="footerOtherLinks">
+            <li class="footerNav">Site Map</li>
+            <li class="footerNav">Disclaimer</li>
+        </ul>
+    </div>
+    <div class="footerRight">
+        <ul class="footerSocial">
+            <li class="footerNav"><i class="fab fa-facebook-f fa-3x"></i> Visit Our Facebook</li>
+            <li class="footerNav"><i class="fab fa-twitter fa-3x"></i> Visit Our Twitter</li>
+            <li class="footerNav"><i class="fas fa-envelope fa-3x"></i> Send Us An Email</li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
