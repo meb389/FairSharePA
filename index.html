@@ -41,28 +41,6 @@
         </div>
     </div>
 
-    <script language="javascript">
-        /* When the user clicks on the button,
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-         // Close the dropdown menu if the user clicks outside of it
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropBtn')) {
-
-                var dropdowns = document.getElementsByClassName("dropdownContent");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
-
     <div id="heroHeading">
         <h1>Schools Deserve <br> Their Fair Share</h1>
     </div>
@@ -142,18 +120,6 @@
             "<h1>85%</h1>" +
             "<h2>Of The Budget From Local Property Taxes</h2></div>"
 
-        b[n++]= "<p>In a city as vibrant and socially-minded as Philadelphia, the only question I had about joining " +
-            "YNPN was why I hadn't found it sooner. The nonprofit leaders in our community are raising up some of " +
-            "the most innovative and effective businesses the city has ever seen, and it's amazing to be an active " +
-            "part of it through YNPN Philly.</p><h3>- kristin wittman</h3>"
-
-        b[n++]= "<p>Philly depends on the work of nonprofits to make our city better, and the professionals who do " +
-            "the work deserve more. I became part of the YNPN Philly Start Up Chapter because YNPN Philly will " +
-            "provide not only networking, but a space where nonprofit professionals can take on leadership roles and" +
-            " projects. YNPN Philly will act as a resource to build up skills, become more effective, and take the " +
-            "next step in a career.  I joined YNPN Philly because I saw a future where nonprofit professionals can be" +
-            " a part of a community.</p><h3>- chloe finigan</h3>"
-
         i=Math.floor(Math.random() * n) ;
         document.write( b[i] )
     </script>
@@ -187,6 +153,24 @@
     </div>
 </div>
 
+<div class="interactiveBlock">
+    <div class="interactiveLeft">
+        <h2>Who's Leading <br> Your District</h2>
+    </div>
+    <div class="interactiveLeftMobile hide">
+        <h2>Who's Leading Your District</h2>
+    </div>
+    <div id="interactiveRight">
+            <input type="text" id="zipCodeDisplay">
+            <button type="button" id="zipCodeSubmit">Search</button>
+    </div>
+    <div id="answerContainer" class="hide">
+        <h3 class="answer" id="answer1">Test</h3>
+        <h3 class="answer" id="answer2">Test</h3>
+        <h3 class="answer" id="answer3">Test</h3>
+    </div>
+</div>
+
 <footer>
     <div class="footerLeft">
         <ul class="footerLinks">
@@ -204,12 +188,19 @@
         </ul>
     </div>
     <div class="footerRight">
-        <ul class="footerSocial">
-            <li class="footerNav"><i class="fab fa-facebook-f fa-3x"></i> Visit Our Facebook</li>
-            <li class="footerNav"><i class="fab fa-twitter fa-3x"></i> Visit Our Twitter</li>
-            <li class="footerNav"><i class="fas fa-envelope fa-3x"></i> Send Us An Email</li>
+        <ul class="socialNav">
+            <li class="nav-item"><i class="fab fa-facebook-f fa-3x"></i> VISIT OUR FACEBOOK</li>
+            <li class="nav-item"><i class="fab fa-twitter fa-3x"></i> VISIT OUR TWITTER</li>
+            <li class="nav-item"><i class="fas fa-envelope fa-3x"></i> SEND US AN EMAIL</li>
+        </ul>
+        <ul class="socialNavMobile">
+            <li class="nav-item"><i class="fab fa-facebook-f fa-3x"></i></li>
+            <li class="nav-item"><i class="fab fa-twitter fa-3x"></i></li>
+            <li class="nav-item"><i class="fas fa-envelope fa-3x"></i></li>
         </ul>
     </div>
 </footer>
+
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
