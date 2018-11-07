@@ -8,9 +8,8 @@ header{
     width:100%;
     height: 750px;
     float: left;
-    background-image: url("https://fthmb.tqn.com/C1675Ds4HkSTRDiIqMULDF4IZ0A=/2995x1997/filters:fill(auto,1)/Privateschool-58b5b2173df78cdcd8a980c7.jpg");
     background-size: 100%;
-    background-repeat: no-repeat;
+    background: url("https://fthmb.tqn.com/C1675Ds4HkSTRDiIqMULDF4IZ0A=/2995x1997/filters:fill(auto,1)/Privateschool-58b5b2173df78cdcd8a980c7.jpg") no-repeat;
 }
 
 footer{
@@ -24,7 +23,7 @@ button{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
     color: #27286F;
-    width: 100px;
+    width: 150px;
     height: 40px;
 }
 
@@ -65,9 +64,15 @@ p{
     font-family: 'Montserrat', sans-serif;
 }
 
+.btn{
+    font-size: 1.5em;
+    width: 150px;
+}
+
 .hide{
     display: none;
 }
+
 /*____________________________________________________________________________________________________________________*/
 
 /*Styling for header section of the website including nav logo & dropdown menu*/
@@ -125,7 +130,6 @@ p{
 .show {
     display: block;
 }
-
 
 #heroHeading{
     float: right;
@@ -266,8 +270,8 @@ p{
     float: left;
     text-align: center;
     margin-top: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
     background-image: url("kids_jumping_jump_shot_students_fun_joy_jump_happiness-1164289.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -289,10 +293,10 @@ p{
 .lowerContact{
     width: 100%;
     float: left;
-    background-color: #27286F;
+    background: linear-gradient(#27286F, #00006E);
     text-align: center;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 4%;
     margin-top: 10%;
 }
 
@@ -301,7 +305,7 @@ p{
 }
 
 .lowerContact button{
-    width: 150px;
+    width: 200px;
 }
 
 /*____________________________________________________________________________________________________________________*/
@@ -562,20 +566,3 @@ p{
 @media screen and (max-width: 400px){
 
 }
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    /* IE10+ CSS styles go here */
-    .nav-item {
-        list-style-position: outside;
-        overflow: hidden;
-}
-
-@supports (-ms-accelerator:true) {
-    .nav-item {
-        list-style-position: outside;
-        overflow: hidden;
-}
-
-    body > ul.styled > li {
-        list-style: none;
-    }
