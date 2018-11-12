@@ -1,3 +1,5 @@
+
+//JS for the drop down menu.
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
@@ -34,7 +36,7 @@ window.addEventListener("touchmove", function(event) {
 
 //______________________________________________________________________________________________________________________
 //______________________________________________________________________________________________________________________
-
+//Sample JS for the Zipcode checker
 
 var zipOne = {
     address: "200 E Grover St. Clarks Summit PA",
@@ -82,3 +84,28 @@ search.addEventListener("click", function() {
 
 //______________________________________________________________________________________________________________________
 //______________________________________________________________________________________________________________________
+//Display the info for the social media icons in the footer
+
+//Display FBPopUp Div
+document.getElementById("fbPop").addEventListener("mouseover", function(){
+    document.getElementById("fbPopDisplay").classList.remove("hide");
+});
+document.getElementById("fbPop").addEventListener("mouseout", function(){
+    document.getElementById("fbPopDisplay").classList.add("hide");
+});
+
+//Display twPopUp Div
+document.getElementById("twPop").addEventListener("mouseover", function(){
+    document.getElementById("twPopDisplay").classList.remove("hide");
+});
+document.getElementById("twPop").addEventListener("mouseout", function(){
+    document.getElementById("twPopDisplay").classList.add("hide");
+});
+
+//Display emailPopUp Div
+document.getElementById("emailPop").addEventListener("mouseover", function(){
+    document.getElementById("emailPopDisplay").classList.remove("hide");
+});
+document.getElementById("emailPop").addEventListener("mouseout", function(){
+    document.getElementById("emailPopDisplay").classList.add("hide");
+});
