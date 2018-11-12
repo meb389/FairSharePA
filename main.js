@@ -1,27 +1,42 @@
+
+//JS for the drop down menu.
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById("myDropdown").classList.add("show");
 }
+
 // Close the dropdown menu if the user clicks outside of it
 window.addEventListener("click", function(event) {
     if (!event.target.matches('.dropBtn')) {
-        let dropdowns = document.getElementsByClassName("dropdownContent");
-        let i;
+        var dropdowns = document.getElementsByClassName("dropdownContent");
+        var i;
         for (i = 0; i < dropdowns.length; i++) {
             let openDropdown = dropdowns[i];
             if (openDropdown.classList.contains('show')) {
                 openDropdown.classList.remove('show');
             }
         }
-    }});
+    }
+});
 
-
-
+//Close the dropdown menu on mobile devices when user clicks outside of it
+window.addEventListener("touchmove", function(event) {
+    if (!event.target.matches('.dropBtn')) {
+        var dropdowns = document.getElementsByClassName("dropdownContent");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            let openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+});
 
 //______________________________________________________________________________________________________________________
 //______________________________________________________________________________________________________________________
-
+//Sample JS for the Zipcode checker
 
 var zipOne = {
     address: "200 E Grover St. Clarks Summit PA",
@@ -69,3 +84,28 @@ search.addEventListener("click", function() {
 
 //______________________________________________________________________________________________________________________
 //______________________________________________________________________________________________________________________
+//Display the info for the social media icons in the footer
+
+//Display FBPopUp Div
+document.getElementById("fbPop").addEventListener("mouseover", function(){
+    document.getElementById("fbPopDisplay").classList.remove("hide");
+});
+document.getElementById("fbPop").addEventListener("mouseout", function(){
+    document.getElementById("fbPopDisplay").classList.add("hide");
+});
+
+//Display twPopUp Div
+document.getElementById("twPop").addEventListener("mouseover", function(){
+    document.getElementById("twPopDisplay").classList.remove("hide");
+});
+document.getElementById("twPop").addEventListener("mouseout", function(){
+    document.getElementById("twPopDisplay").classList.add("hide");
+});
+
+//Display emailPopUp Div
+document.getElementById("emailPop").addEventListener("mouseover", function(){
+    document.getElementById("emailPopDisplay").classList.remove("hide");
+});
+document.getElementById("emailPop").addEventListener("mouseout", function(){
+    document.getElementById("emailPopDisplay").classList.add("hide");
+});

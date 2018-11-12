@@ -8,7 +8,8 @@ header{
     width:100%;
     height: 750px;
     float: left;
-    background-image: url("https://fthmb.tqn.com/C1675Ds4HkSTRDiIqMULDF4IZ0A=/2995x1997/filters:fill(auto,1)/Privateschool-58b5b2173df78cdcd8a980c7.jpg");
+    background-image: url("Privateschool-58b5b2173df78cdcd8a980c7.jpg");
+    background-position: 20%;
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -22,10 +23,8 @@ footer{
 button{
     background-color: #E5E5E5;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5em;
     color: #27286F;
-    width: 100px;
-    height: 40px;
+    width: 150px;
 }
 
 li{
@@ -65,12 +64,49 @@ p{
     font-family: 'Montserrat', sans-serif;
 }
 
+.titleLeft{
+    float: left;
+    width: 50%;
+    padding-left: 15%;
+    margin-top: 10%;
+}
+
+.titleLeftMobile{
+    display: none;
+}
+
+.bodyRight{
+    float: right;
+    width: 50%;
+    padding-right: 10%;
+    margin-top: 10%;
+}
+.btn{
+    font-size: 1.5em;
+    width: 150px;
+    height: 40px;
+}
+
+.show {
+    display: block;
+}
 .hide{
     display: none;
 }
-/*____________________________________________________________________________________________________________________*/
 
+/*____________________________________________________________________________________________________________________*/
 /*Styling for header section of the website including nav logo & dropdown menu*/
+#heroHeading{
+    float: right;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 50%;
+}
+
+#heroHeading h1{
+    float: right;
+    margin-right: 10%;
+}
 
 .navLogo{
     float: left;
@@ -84,12 +120,20 @@ p{
     float: right;
 }
 
+.dropBtn{
+    display: block;
+    float: right;
+    margin-top: 100px;
+    margin-right: 15%;
+    color: #707070;
+    cursor: pointer;
+}
+
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
 /* Dropdown Content (Hidden by Default) */
 .dropdownContent {
     width: 30%;
@@ -103,15 +147,6 @@ p{
     z-index: 1;
 }
 
-.dropBtn{
-    display: block;
-    float: right;
-    margin-top: 100px;
-    margin-right: 15%;
-    color: #707070;
-    cursor: pointer;
-}
-
 .socialNav{
     margin-top: 5%;
     margin-bottom: 10%;
@@ -121,28 +156,9 @@ p{
     display: none;
 }
 
-/*!* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) *!*/
-.show {
-    display: block;
-}
-
-
-#heroHeading{
-    float: right;
-    width: 100%;
-    margin-top: 10%;
-    margin-left: 50%;
-}
-
-#heroHeading h1{
-    float: right;
-    margin-right: 10%;
-}
-
 /*____________________________________________________________________________________________________________________*/
 
 /*Styling for the What is Fair Share PA block*/
-
 .whatIsFairShare{
     width: 100%;
     float: left;
@@ -150,43 +166,27 @@ p{
     margin-bottom: 10%;
 }
 
-.whatIsLeft{
-    float: left;
-    width: 50%;
-    padding-left: 15%;
-    margin-top: 10%;
-}
-
-.whatIsLeftMobile{
-    display: none;
-}
-
-.whatIsRight{
-    float: right;
-    width: 50%;
-    padding-right: 10%;
-    margin-top: 10%;
-}
-
 /*____________________________________________________________________________________________________________________*/
-
 /*Styling for the support the movement section of the website*/
+#formSubmitButton{
+    float: left;
+    padding-left: 3%;
+}
 
+.support h2{
+    color: #E5E5E5;
+}
 .support{
     background-color: #27286F;
     width: 100%;
     float: left;
     text-align: center;
-    padding-bottom: 3%;
+    padding-bottom: 8%;
 }
 
 .supportTitle{
-    padding-top: 3%;
+    padding-top: 8%;
     padding-bottom: 2%;
-}
-
-.support h2{
-    color: #E5E5E5;
 }
 
 .supportForm{
@@ -215,16 +215,8 @@ p{
     float: right;
 }
 
-
-#formSubmitButton{
-    float: left;
-    padding-left: 3%;
-}
-
 /*____________________________________________________________________________________________________________________*/
-
 /*Styling for the Who's Leading The Charge section of the website*/
-
 .leadingChargeTitle{
     width: 100%;
     float: left;
@@ -254,26 +246,11 @@ p{
 .attyDesc{
     width: 85%;
     padding-left: 15%;
+    text-align: left;
 }
 
 /*____________________________________________________________________________________________________________________*/
-
 /*Styling for the random loading key stat section of the website*/
-
-.keyStat{
-    width: 100%;
-    height: auto;
-    float: left;
-    text-align: center;
-    margin-top: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    background-image: url("kids_jumping_jump_shot_students_fun_joy_jump_happiness-1164289.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 20%;
-}
-
 .actualStats h1{
     color: #488FCD;
 }
@@ -281,42 +258,54 @@ p{
 .actualStats h2{
     color: #E5E5E5;
 }
-
-/*____________________________________________________________________________________________________________________*/
-
-/*Styling for the lower contact section of the website*/
-
-.lowerContact{
+.keyStat{
     width: 100%;
+    height: auto;
     float: left;
-    background-color: #27286F;
     text-align: center;
-    padding-top: 3%;
-    padding-bottom: 3%;
     margin-top: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-image: url("kids_jumping_jump_shot_students_fun_joy_jump_happiness-1164289.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
 }
 
+
+
+/*____________________________________________________________________________________________________________________*/
+/*Styling for the lower contact section of the website*/
 .lowerContact h2{
     color: #E5E5E5;
 }
 
 .lowerContact button{
-    width: 150px;
+    width: 200px;
+}
+
+.lowerContact{
+    width: 100%;
+    float: left;
+    background: linear-gradient(#27286F, #000069);
+    text-align: center;
+    padding-bottom: 8%;
+    margin-top: 10%;
 }
 
 /*____________________________________________________________________________________________________________________*/
+/*Styling for the ZipCode search feature*/
+#zipCodeDisplay{
+    width: 20%;
+    height: 40px;
+    margin-top: 3%;
+}
 
 .interactiveBlock{
     width: 100%;
     float: left;
     padding-top: 10%;
     padding-bottom: 10%;
-}
-
-#zipCodeDisplay{
-    width: 20%;
-    height: 40px;
-    margin-top: 3%;
 }
 
 .interactiveLeft{
@@ -330,13 +319,32 @@ p{
     float: right;
 }
 
-.answerContainer{
-
+/*____________________________________________________________________________________________________________________*/
+/*Styling for the footer of the website*/
+#fbPopDisplay p, #emailPopDisplay p, #twPopDisplay p{
+    color: #E5E5E5;
 }
 
-/*____________________________________________________________________________________________________________________*/
+#fbPopDisplay{
+    position: absolute;
+    z-index: 2;
+    padding-top: 65px;
+    padding-left: 9%;
+}
 
-/*Styling for the footer of the website*/
+#twPopDisplay{
+    position: absolute;
+    z-index: 2;
+    padding-top: 125px;
+    padding-left: 9%;
+}
+
+#emailPopDisplay{
+    position: absolute;
+    z-index: 2;
+    padding-top: 188px;
+    padding-left: 9%;
+}
 
 .footerLeft{
     margin-top: 5%;
@@ -344,6 +352,7 @@ p{
     float: left;
     text-align: center;
 }
+
 .footerLeft li{
     color: #E5E5E5;
     padding: 5px;
@@ -366,19 +375,11 @@ p{
 }
 
 /*____________________________________________________________________________________________________________________*/
-
 /*Begin styling adjustments for mobile*/
-
 @media screen and (max-width: 1050px) {
 
     header{
         height: auto;
-    }
-
-    button{
-        font-size: 1em;
-        width: 100px;
-        height: 40px;
     }
 
     li{
@@ -398,15 +399,41 @@ p{
         font-size: 1.2em;
     }
 
+    .btn{
+        font-size: 1em;
+        width: 100px;
+    }
+
+    .titleLeft{
+        display: none;
+    }
+
+    .titleLeftMobile{
+        text-align: center;
+        display: block;
+        width: 100%;
+        float: left;
+        color: #40403F;
+        margin-top: 10%;
+    }
+
+    .bodyRight{
+        width: 95%;
+        float: left;
+        padding-right: 0;
+        padding-left: 5%;
+        margin-top: 5%;
+    }
+
+    /*________________________________________________________________________________________________________________*/
     /*Mobile styling for the header section of the website*/
+    #heroHeading{
+        padding-bottom: 5%;
+    }
 
     .headerNavigation{
         width: 50%;
         float: right;
-    }
-
-    #heroHeading{
-        padding-bottom: 5%;
     }
 
     /* Dropdown Content (Hidden by Default) */
@@ -427,43 +454,20 @@ p{
         margin-bottom: 10%;
     }
     /*________________________________________________________________________________________________________________*/
-
     /*Mobile styling for the what is Fair Share section of the website*/
-
     .whatIsFairShare{
         margin-bottom: 10%;
     }
 
-    .whatIsLeft{
-        display: none;
-    }
-
-    .whatIsLeftMobile{
-        text-align: center;
-        display: block;
-        width: 100%;
-        float: left;
-        color: #40403F;
-        margin-top: 10%;
-    }
-    
-    .whatIsRight{
-        width: 95%;
-        float: left;
-        padding-right: 0;
-        padding-left: 5%;
-        margin-top: 5%;
-    }
-
     /*________________________________________________________________________________________________________________*/
-
+    /*Support section styling*/
     .supportLeft{
         width: 40%;
         margin-left: 20%;
     }
 
+    /*________________________________________________________________________________________________________________*/
     /*Mobile styling for the Who's leading the charge section of the website*/
-
     .leadingChargeTitle{
         margin-top: 10%;
         margin-bottom: 5%;
@@ -494,8 +498,10 @@ p{
     }
 }
 
+/*____________________________________________________________________________________________________________________*/
+/*Below 500 px screen size styling*/
 @media screen and (max-width: 500px) {
-
+    /*Mobile styling for the standard elements of the website*/
     h1{
         font-size: 4em;
     }
@@ -508,6 +514,8 @@ p{
         font-size: 1.2em;
     }
 
+    /*________________________________________________________________________________________________________________*/
+    /*Mobile styling for the header of the website*/
     .headerNavigation{
         width: 60%;
     }
@@ -527,17 +535,33 @@ p{
         margin-right: 10%;
     }
 
+    /*________________________________________________________________________________________________________________*/
+    /*Mobile styling for the support section of the website*/
     .supportLeft{
         width: 50%;
         margin-left: 10%;
     }
 
+    /*________________________________________________________________________________________________________________*/
+    /*Mobile styling for the attorney section of the website*/
     .leadingChargeTitle{
         margin-bottom: 0;
     }
 
+    /*________________________________________________________________________________________________________________*/
+    /*Mobile styling for the Contact Block of the website*/
     .lowerContact{
         padding-bottom: 5%;
+    }
+
+    /*________________________________________________________________________________________________________________*/
+    /*Mobile styling for the footer of the website*/
+    .bodyRight, .footerLeft, li{
+        padding-top: 5%;
+    }
+
+    .lowerContact button{
+        width: 150px;
     }
 
     .footerLeft{
@@ -545,37 +569,8 @@ p{
         width: 100%;
     }
 
-    .footerLeft li{
-        padding-top: 5%;
-    }
-
     .footerRight{
         margin-top: 5%;
         width: 100%;
     }
-
-    .whatIsRight li{
-        padding-top: 5%;
-    }
 }
-
-@media screen and (max-width: 400px){
-
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    /* IE10+ CSS styles go here */
-    .nav-item {
-        list-style-position: outside;
-        overflow: hidden;
-}
-
-@supports (-ms-accelerator:true) {
-    .nav-item {
-        list-style-position: outside;
-        overflow: hidden;
-}
-
-    body > ul.styled > li {
-        list-style: none;
-    }

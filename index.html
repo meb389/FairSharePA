@@ -9,8 +9,9 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
 
+
+<body>
 <header>
     <div class="navLogo">
         <img src="#">
@@ -20,7 +21,7 @@
         <i onclick="myFunction()" class="fas fa-bars fa-4x dropBtn"></i>
         <div id="myDropdown" class="dropdown dropdownContent">
             <ul class="navigation">
-                <li class="nav-item"><a href="#">ABOUT FAIR SHARE PA</a></li>
+                <li class="nav-item"><a href="http://www.google.com">ABOUT FAIR SHARE PA</a></li>
                 <li class="nav-item"><a href="#">GET INVOLVED</a></li>
                 <li class="nav-item"><a href="#">MEDIA COVERAGE</a></li>
                 <li class="nav-item"><a href="#">FREQUENT QUESTIONS</a></li>
@@ -29,11 +30,6 @@
                 <li class="nav-item"><a href="#">CONTACT</a></li>
             </ul>
             <ul class="socialNav">
-                <li class="nav-item"><i class="fab fa-facebook-f fa-3x"></i> VISIT OUR FACEBOOK</li>
-                <li class="nav-item"><i class="fab fa-twitter fa-3x"></i> VISIT OUR TWITTER</li>
-                <li class="nav-item"><i class="fas fa-envelope fa-3x"></i> SEND US AN EMAIL</li>
-            </ul>
-            <ul class="socialNavMobile">
                 <li class="nav-item"><i class="fab fa-facebook-f fa-3x"></i></li>
                 <li class="nav-item"><i class="fab fa-twitter fa-3x"></i></li>
                 <li class="nav-item"><i class="fas fa-envelope fa-3x"></i></li>
@@ -47,13 +43,14 @@
 </header>
 
 <div class="whatIsFairShare">
-    <div class="whatIsLeft">
+    <div class="titleLeft">
         <h2>What's Fair <br> Share PA?</h2>
     </div>
-    <div class="whatIsLeftMobile">
+    <div class="titleLeftMobile">
         <h2>What's Fair Share PA?</h2>
     </div>
-    <div class="whatIsRight">
+
+    <div class="bodyRight">
         <p>Let's just drop a little Evergreen right here. Here's something that's fun.
             A fan brush is a fantastic piece of equipment. Use it. Make friends with it.
 
@@ -69,6 +66,7 @@
     <div class="supportTitle">
         <h2>Support The Movement</h2>
     </div>
+
     <div class="supportForm">
         <div class="supportLeft">
             <div class="formInput">
@@ -76,6 +74,7 @@
                 <input type="email" class="supportEmail" id="supportEmail" placeholder="Email" required>
             </div>
         </div>
+
         <div class="supportRight">
             <div id="formSubmitButton">
                 <button type="submit" class="btn">Send</button>
@@ -86,12 +85,14 @@
 
 <div class="leadingCharge">
     <div class="leadingChargeTitle">
-        <h2>Who's Leading The Charge</h2>
+        <h2>The Team</h2>
     </div>
+
     <div class="leadingChargeLeft">
         <div class="attyLogo">
             <img src="sIGNATURE.png" width="70%">
         </div>
+
         <div class="attyDesc">
             <p>Just use the old one inch brush. There are no limits in this world. Let's get crazy.
                 Making all those little fluffies that live in the clouds. Trees grow in all kinds of ways.
@@ -99,10 +100,12 @@
                 bring it into your world</p>
         </div>
     </div>
+
     <div class="leadingChargeRight">
         <div class="attyLogo">
             <img src="logo.png" width="70%">
         </div>
+
         <div class="attyDesc">
             <p>Just use the old one inch brush. There are no limits in this world. Let's get crazy.
                 Making all those little fluffies that live in the clouds. Trees grow in all kinds of ways.
@@ -126,13 +129,15 @@
 </div>
 
 <div class="howDistrict">
-    <div class="whatIsLeft">
+    <div class="titleLeft">
         <h2>How Does <br> A District <br> Participate?</h2>
     </div>
-    <div class="whatIsLeftMobile">
+
+    <div class="titleLeftMobile">
         <h2>How Does A District Participate?</h2>
     </div>
-    <div class="whatIsRight">
+
+    <div class="bodyRight">
         <p>Let's just drop a little Evergreen right here. Here's something that's fun.
             A fan brush is a fantastic piece of equipment. Use it. Make friends with it.
 
@@ -162,7 +167,7 @@
     </div>
     <div id="interactiveRight">
             <input type="text" id="zipCodeDisplay">
-            <button type="button" id="zipCodeSubmit">Search</button>
+            <button type="button" id="zipCodeSubmit" class="btn">Search</button>
     </div>
     <div id="answerContainer" class="hide">
         <h3 class="answer" id="answer1">Test</h3>
@@ -187,16 +192,22 @@
             <li class="footerNav">Disclaimer</li>
         </ul>
     </div>
+
     <div class="footerRight">
+        <div id="fbPopDisplay" class="hide">
+            <p>Join us on Facebook</p>
+        </div>
+        <div id="twPopDisplay" class="hide">
+            <p>Join us on Twitter</p>
+        </div>
+        <div id="emailPopDisplay" class="hide">
+            <p>Send us an Email</p>
+        </div>
+
         <ul class="socialNav">
-            <li class="nav-item"><i class="fab fa-facebook-f fa-3x"></i> VISIT OUR FACEBOOK</li>
-            <li class="nav-item"><i class="fab fa-twitter fa-3x"></i> VISIT OUR TWITTER</li>
-            <li class="nav-item"><i class="fas fa-envelope fa-3x"></i> SEND US AN EMAIL</li>
-        </ul>
-        <ul class="socialNavMobile">
-            <li class="nav-item"><i class="fab fa-facebook-f fa-3x"></i></li>
-            <li class="nav-item"><i class="fab fa-twitter fa-3x"></i></li>
-            <li class="nav-item"><i class="fas fa-envelope fa-3x"></i></li>
+            <li  class="nav-item"><i id="fbPop" class="fab fa-facebook-f fa-3x"></i></li>
+            <li class="nav-item"><i id="twPop" class="fab fa-twitter fa-3x"></i></li>
+            <li class="nav-item"><i id="emailPop" class="fas fa-envelope fa-3x"></i></li>
         </ul>
     </div>
 </footer>
