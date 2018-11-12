@@ -3,6 +3,7 @@ html,body{
     padding: 0;
     font-size: 10px;
 }
+
 /*Standard element styling*/
 header{
     width:100%;
@@ -11,7 +12,7 @@ header{
     background-image: url("Privateschool-58b5b2173df78cdcd8a980c7.jpg");
     background-position: 20%;
     background-size: 100%;
-    background: url("https://fthmb.tqn.com/C1675Ds4HkSTRDiIqMULDF4IZ0A=/2995x1997/filters:fill(auto,1)/Privateschool-58b5b2173df78cdcd8a980c7.jpg") no-repeat;
+    background-repeat: no-repeat;
 }
 
 footer{
@@ -25,7 +26,6 @@ button{
     font-family: 'Montserrat', sans-serif;
     color: #27286F;
     width: 150px;
-    height: 40px;
 }
 
 li{
@@ -64,6 +64,7 @@ p{
     color: #40403F;
     font-family: 'Montserrat', sans-serif;
 }
+
 .titleLeft{
     float: left;
     width: 50%;
@@ -87,23 +88,11 @@ p{
     height: 40px;
 }
 
-.show {
-    display: block;
-}
-.hide{
-    display: none;
-}
 
-.btn{
-    font-size: 1.5em;
-    width: 150px;
-}
 
 .hide{
     display: none;
 }
-
-/*____________________________________________________________________________________________________________________*/
 
 /*____________________________________________________________________________________________________________________*/
 /*Styling for header section of the website including nav logo & dropdown menu*/
@@ -122,8 +111,8 @@ p{
 .navLogo{
     float: left;
     width: 30%;
-    margin-top: 100px;
-    margin-left: 15%;
+    margin-top: 50px;
+    margin-left: 5%;
 }
 
 .headerNavigation{
@@ -168,24 +157,11 @@ p{
     display: none;
 }
 
-/*!* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) *!*/
 .show {
     display: block;
 }
-
-#heroHeading{
-    float: right;
-    width: 100%;
-    margin-top: 10%;
-    margin-left: 50%;
-}
-
-#heroHeading h1{
-    float: right;
-    margin-right: 10%;
-}
-
 /*____________________________________________________________________________________________________________________*/
+
 /*Styling for the What is Fair Share PA block*/
 .whatIsFairShare{
     width: 100%;
@@ -304,17 +280,6 @@ p{
 
 /*____________________________________________________________________________________________________________________*/
 /*Styling for the lower contact section of the website*/
-
-.lowerContact{
-    width: 100%;
-    float: left;
-    background: linear-gradient(#27286F, #00006E);
-    text-align: center;
-    padding-top: 2%;
-    padding-bottom: 4%;
-    margin-top: 10%;
-}
-
 .lowerContact h2{
     color: #E5E5E5;
 }
